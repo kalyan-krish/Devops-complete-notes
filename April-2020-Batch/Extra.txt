@@ -1,0 +1,185 @@
+- Git branching and Merging strategy
+=========================================
+- New feature
+- Bug Fixing
+- Team
+- Region wide
+https://docs.microsoft.com/en-us/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops
+
+devopsinpocket
+
+DevOpsInPocket
+		devopsinpocket-fs
+		devopsinpocket-mycommands
+		myvideotutorials
+		myslides
+		mywebreference
+		mywebtutorials
+		mynotes
+
+Release Pattern
+==============================
+	Major 	SNAPSHOT	Minor 	pathch/servicepack
+	1	-snapshot	1.1	1.1.1
+	v1	alpha|beta|	v1.1	v1.1.1
+	rel1			rel1.1	rel1.1
+
+===========================================
+alpha	beta	v1	v1.1 	v1.1.1
+===========================================
+
+
+master
+	alpha
+	beta
+	v1
+	v1.1
+	v1.1.1
+	
+
+GROUP ID	org.services.devopsschool
+ArtifactId	devopsinpocket-fs
+version		v1-SNAPSHOT
+
+mvn archetype:generate -DgroupId=org.services.devopsschool -DartifactId=devopsinpocket-fs -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+==============================
+WORKFLOW
+
+
+TODO	PENDING	 INPROG 	DONE
+=========================================
+
+ProdName-
+	
+
+naming contension
+
+
+- We would push we have a code
+- Team Meeting
+		Agile Module - SCRUM
+- JIRA - CLOUD
+================================================================
+Kamran - Please learn Git and Push your code skelaton
+Jigar Desai  - Please learn Git and Push your code skelaton
+Neha - Please learn Git and Push your code skelaton
+Raghu  - Please learn Git and Push your code skelaton
+Vamshi - Please learn Git and Push your code skelaton
+
+Kamran - Please learn build mgmt tool
+Jigar Desai  - Please learn build mgmt tool
+Neha - Please learn build mgmt tool
+Raghu  - Please learn build mgmt tool
+Vamshi - Please learn build mgmt tool
+
+
+
+microservice 0 - Rajesh - Java  - Foundation Microservice 0
+Microservice 1 - Rajesh - Go  - MyCommands
+Microservice 2 - Kamran - Python - MyVideoTutorials
+Microservice 3 - Jigar Desai - Node  - MySlides
+Microservice 4 - Neha  - Python - MyWebReference
+Microservice 5 - Raghu - Python - MyWebTutorials
+Microservice 6 - Ram - Python - MyNotes
+
+
+
+PLAN ->
+JAVA
+Go
+Python
+\
+
+Code Review
+	Peer Code Review
+		Code Collaba
+		Gerrit by Google
+		Gitlab
+		Github
+		
+	Static Code Review
+
+	Python
+	- PyCharm – Cross-platform Python IDE with code inspections available for analyzing code on-the-fly in the editor and bulk 	analysis of the whole project.
+	- PyDev – Eclipse-based Python IDE with code analysis available on-the-fly in the editor or at save time.
+	- Pylint – Static code analyzer. Quite stringent; includes many stylistic warnings as well.
+	Node
+		ESLint
+		JSPrime
+		NodeJsScan
+	Java
+		emma, checkstylce, findbugs
+	Go
+		GolangCI
+	==================================
+	Quality Management Tool
+		Code Quality
+			Peer Code Review
+			Static Code Review
+		Test Quality 
+
+===============SONARQUBE=====================
+Ops --
+===================
+===================================================
+
+Plan -> Code -> Test -> Release(Prod) --> Ops
+
+=================
+DevOps - Code -> test -> release
+Auto infra through Terraform
+------------------------
+
+Containization
+======================
+dockerfile
+	comverting app - image -> regitry
+	docker-compsoe
+
+Kubernetes->Docker->Container->Docker-compose-Dockerfile-App
+Ops
+
+
+
+Ops
+===============================
+Infra setup - terraforn
+		DEV - QA - PROD
+		WEB - QAP - Db
+		LB
+		STORAGE
+		NETOWKRING
+
+Monitoring
+	Log monitong - 1 hours
+		Matrix -> App ->
+	Per mongi
+
+	Infra - 
+
+	Secut
+
+
+
+
+DevOps
+===============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
